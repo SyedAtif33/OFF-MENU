@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+.hero_section {
+    background: url(bg_hero.webp) no-repeat center center/cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero_section_logo h1 {
+    font-size: 42px;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.hero_section_content {
+    text-align: center;
+}
+
+.hero_section_content .hero_section_content_title {
+    font-weight: 500;
+}
+
+.hero_section_content .hero_section_content_para {
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 16px;
+}
+
+.btn_container {
+    margin-top: 28px;
+}
+
+.btn_container .btn {
+    font-size: 12px;
+    padding: 16px;
+    border-radius: 30px;
+    border: 1px solid gray;
+    font-weight: 600;
+    margin: 0px 5px;
+    transition: 0.3s all ease;
+    cursor: pointer;
+}
+
+.btn_container button:nth-child(1) {
+    background-color: transparent;
+}
+
+.btn_container button:nth-child(2) {
+    background-color: black;
+    color: white;
+}
+
+.btn_container button:hover {
+    transform: scale(1.1);
+}
+
+.video-section {
+    text-align: center;
+    padding: 40px 0;
+    background-color:#dbdbdb
+}
+
+.video-section iframe {
+    width: 95vw;
+    height: 60vw;
+    max-width: 2000px;
+    max-height: 1500px;
+}
+
+.caption {
+  margin-top: -130px;
+  margin-right: 900px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 20px;
+    margin: 120px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-content h2 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.card-content a {
+    text-decoration: none;
+    color: #1a73e8;
+    font-weight: bold;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+.section{
+    background-image: radial-gradient(#8B8A89 1.5px, transparent 0);
+    width: 100%;
+    height: 140vh;
+}
+.animcard{
+    width: 500px;
+    height: 345px;
+    border-radius: 25px;
+    background-color: white;
+    padding: 20px 50px;
+    margin-left: 200px;
+}
+.animbtn{
+    display: flex;
+    align-items: center;
+    height: 145px;
+    border-bottom: 2px solid #E8E7E7;
+}
+.btn101{
+    height: 64px;
+    width: 250px;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    font-size: 17px;
+    margin-right: 25px;
+}
+
+.a1{
+    height: 500px;
+    width: 740px;
+    position: absolute;
+    right: -350px;
+    margin-top: 4000px;
+    background-image: url(a1.webp);
+    background-size: cover;
+    border-radius: 25px;
+    top: 300px;
+    animation: anim-a1 5s linear 0s infinite alternate;
+}
+
+@keyframes anim-a1 {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(25deg);
+    }
+    75%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-25deg);
+    }
+    
+}
+
+.a2{
+    height: 140px;
+    width: 140px;
+    position: absolute;
+    top: 20px;
+    left: 47%;
+    margin-top: 4000px;
+    background-image: url(a2.webp);
+    background-size: cover;
+    border-radius: 25px;
+    transform: rotate(10deg);
+    animation: anim-a2 0.8s linear 0s infinite alternate;
+}
+
+@keyframes anim-a2 {
+    100%{
+        top: 30px;
+        transform: rotate(7deg);
+    }
+}
+.a3{
+    height: 130px;
+    width: 130px;
+    position: absolute;
+    top: 400px;
+    left: -80px;
+    margin-top: 4000px;
+    background-image:url(a3.webp);
+    background-size: cover;
+    border-radius: 25px;
+    animation: anim-a3 0.8s linear 0s infinite alternate;
+}
+@keyframes anim-a3 {
+    100%{
+        left: -70px;
+        transform: rotate(-5deg);
+    }
+}
+
+.heading1 {
+    font-size: 125px;
+    padding-top: 200px;
+    margin-left: 200px;
+}
